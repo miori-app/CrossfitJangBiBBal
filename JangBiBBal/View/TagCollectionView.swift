@@ -26,6 +26,12 @@ class TagCollectionView : UICollectionView {
 
 extension TagCollectionView {
     private func setAttribute() {
-        self.backgroundColor = .yellow
+        self.backgroundColor = .systemGray5
+        self.showsHorizontalScrollIndicator = false
+        self.register(TagCell.self, forCellWithReuseIdentifier: TagCell.registerID)
+        self.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        flowLayout.scrollDirection = .horizontal
+        flowLayout.minimumLineSpacing = 10
     }
 }
+
