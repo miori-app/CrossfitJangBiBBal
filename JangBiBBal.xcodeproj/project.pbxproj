@@ -19,6 +19,24 @@
 		3D0B864B2822C5AE000EA380 /* TagCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B864A2822C5AD000EA380 /* TagCollectionView.swift */; };
 		3D0B864E2822C66C000EA380 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0B864D2822C66C000EA380 /* SnapKit */; };
 		3D0B86512822C6D8000EA380 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86502822C6D8000EA380 /* Constant.swift */; };
+		3D0B86542822DE27000EA380 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86532822DE27000EA380 /* TagCell.swift */; };
+		3D0B865B282406A1000EA380 /* TagCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B865A282406A1000EA380 /* TagCellModel.swift */; };
+		3D0B865D2824073E000EA380 /* TagCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B865C2824073E000EA380 /* TagCollectionViewModel.swift */; };
+		3D0B866028241056000EA380 /* TagCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B865F28241056000EA380 /* TagCellData.swift */; };
+		3D0B8663282414A6000EA380 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B8662282414A6000EA380 /* UIColor.swift */; };
+		3D0B8665282423AC000EA380 /* ShoppingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B8664282423AC000EA380 /* ShoppingTableView.swift */; };
+		3D0B86682824CFE9000EA380 /* ShoppingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86672824CFE9000EA380 /* ShoppingResponse.swift */; };
+		3D0B866C2824D25E000EA380 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0B866B2824D25E000EA380 /* Alamofire */; };
+		3D0B866E2824D576000EA380 /* ShoppingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B866D2824D576000EA380 /* ShoppingAPI.swift */; };
+		3D0B86712824D65C000EA380 /* NaverAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86702824D65C000EA380 /* NaverAPIKeys.swift */; };
+		3D0B86732824D6B8000EA380 /* ShoppingNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86722824D6B8000EA380 /* ShoppingNetworkManager.swift */; };
+		3D0B86752824DFAA000EA380 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86742824DFAA000EA380 /* ShoppingTableViewCell.swift */; };
+		3D0B86782824FA28000EA380 /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86772824FA28000EA380 /* CustomObservable.swift */; };
+		3D0B867A2824FCE1000EA380 /* ShoppingTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86792824FCE1000EA380 /* ShoppingTableViewModel.swift */; };
+		3D0B867D2825765E000EA380 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B867C2825765E000EA380 /* String.swift */; };
+		3D0B868028257809000EA380 /* ShoppingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B867F28257809000EA380 /* ShoppingCellViewModel.swift */; };
+		3D0B868228257CF6000EA380 /* ShoppingCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B868128257CF6000EA380 /* ShoppingCellModel.swift */; };
+		3D0B868528257E26000EA380 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3D0B868428257E26000EA380 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +72,22 @@
 		3D0B86482821765F000EA380 /* NaviTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTitle.swift; sourceTree = "<group>"; };
 		3D0B864A2822C5AD000EA380 /* TagCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionView.swift; sourceTree = "<group>"; };
 		3D0B86502822C6D8000EA380 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3D0B86532822DE27000EA380 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		3D0B865A282406A1000EA380 /* TagCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellModel.swift; sourceTree = "<group>"; };
+		3D0B865C2824073E000EA380 /* TagCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewModel.swift; sourceTree = "<group>"; };
+		3D0B865F28241056000EA380 /* TagCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellData.swift; sourceTree = "<group>"; };
+		3D0B8662282414A6000EA380 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3D0B8664282423AC000EA380 /* ShoppingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableView.swift; sourceTree = "<group>"; };
+		3D0B86672824CFE9000EA380 /* ShoppingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingResponse.swift; sourceTree = "<group>"; };
+		3D0B866D2824D576000EA380 /* ShoppingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAPI.swift; sourceTree = "<group>"; };
+		3D0B86702824D65C000EA380 /* NaverAPIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAPIKeys.swift; sourceTree = "<group>"; };
+		3D0B86722824D6B8000EA380 /* ShoppingNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingNetworkManager.swift; sourceTree = "<group>"; };
+		3D0B86742824DFAA000EA380 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		3D0B86772824FA28000EA380 /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
+		3D0B86792824FCE1000EA380 /* ShoppingTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewModel.swift; sourceTree = "<group>"; };
+		3D0B867C2825765E000EA380 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3D0B867F28257809000EA380 /* ShoppingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCellViewModel.swift; sourceTree = "<group>"; };
+		3D0B868128257CF6000EA380 /* ShoppingCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0B868528257E26000EA380 /* Kingfisher in Frameworks */,
 				3D0B864E2822C66C000EA380 /* SnapKit in Frameworks */,
+				3D0B866C2824D25E000EA380 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +176,9 @@
 		3D0B8641282174B6000EA380 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D0B86522822DE1D000EA380 /* Cells */,
 				3D0B864A2822C5AD000EA380 /* TagCollectionView.swift */,
+				3D0B8664282423AC000EA380 /* ShoppingTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +186,9 @@
 		3D0B8642282174BA000EA380 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3D0B867E282577E2000EA380 /* Cells */,
+				3D0B865C2824073E000EA380 /* TagCollectionViewModel.swift */,
+				3D0B86792824FCE1000EA380 /* ShoppingTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,7 +196,10 @@
 		3D0B8643282174C3000EA380 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D0B865E28241044000EA380 /* DummyData */,
 				3D0B864728217652000EA380 /* Navigation */,
+				3D0B865A282406A1000EA380 /* TagCellModel.swift */,
+				3D0B868128257CF6000EA380 /* ShoppingCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +207,10 @@
 		3D0B8644282174C7000EA380 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3D0B866F2824D648000EA380 /* Secret */,
+				3D0B86692824D00B000EA380 /* Entity */,
+				3D0B866D2824D576000EA380 /* ShoppingAPI.swift */,
+				3D0B86722824D6B8000EA380 /* ShoppingNetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -178,9 +226,61 @@
 		3D0B864F2822C6C7000EA380 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				3D0B866128241493000EA380 /* Extension */,
 				3D0B86502822C6D8000EA380 /* Constant.swift */,
+				3D0B86772824FA28000EA380 /* CustomObservable.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3D0B86522822DE1D000EA380 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B86532822DE27000EA380 /* TagCell.swift */,
+				3D0B86742824DFAA000EA380 /* ShoppingTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3D0B865E28241044000EA380 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B865F28241056000EA380 /* TagCellData.swift */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		3D0B866128241493000EA380 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B8662282414A6000EA380 /* UIColor.swift */,
+				3D0B867C2825765E000EA380 /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D0B86692824D00B000EA380 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B86672824CFE9000EA380 /* ShoppingResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D0B866F2824D648000EA380 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B86702824D65C000EA380 /* NaverAPIKeys.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		3D0B867E282577E2000EA380 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B867F28257809000EA380 /* ShoppingCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +301,8 @@
 			name = JangBiBBal;
 			packageProductDependencies = (
 				3D0B864D2822C66C000EA380 /* SnapKit */,
+				3D0B866B2824D25E000EA380 /* Alamofire */,
+				3D0B868428257E26000EA380 /* Kingfisher */,
 			);
 			productName = JangBiBBal;
 			productReference = 3D0B860E2820C605000EA380 /* JangBiBBal.app */;
@@ -276,6 +378,8 @@
 			mainGroup = 3D0B86052820C605000EA380;
 			packageReferences = (
 				3D0B864C2822C66C000EA380 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3D0B866A2824D25E000EA380 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3D0B868328257E26000EA380 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3D0B860F2820C605000EA380 /* Products */;
 			projectDirPath = "";
@@ -319,11 +423,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0B86752824DFAA000EA380 /* ShoppingTableViewCell.swift in Sources */,
+				3D0B86782824FA28000EA380 /* CustomObservable.swift in Sources */,
+				3D0B867D2825765E000EA380 /* String.swift in Sources */,
+				3D0B866028241056000EA380 /* TagCellData.swift in Sources */,
+				3D0B86542822DE27000EA380 /* TagCell.swift in Sources */,
 				3D0B86462821750D000EA380 /* MainViewController.swift in Sources */,
+				3D0B86712824D65C000EA380 /* NaverAPIKeys.swift in Sources */,
+				3D0B86732824D6B8000EA380 /* ShoppingNetworkManager.swift in Sources */,
+				3D0B867A2824FCE1000EA380 /* ShoppingTableViewModel.swift in Sources */,
+				3D0B865B282406A1000EA380 /* TagCellModel.swift in Sources */,
+				3D0B866E2824D576000EA380 /* ShoppingAPI.swift in Sources */,
+				3D0B865D2824073E000EA380 /* TagCollectionViewModel.swift in Sources */,
 				3D0B86122820C605000EA380 /* AppDelegate.swift in Sources */,
 				3D0B864B2822C5AE000EA380 /* TagCollectionView.swift in Sources */,
+				3D0B8663282414A6000EA380 /* UIColor.swift in Sources */,
 				3D0B86492821765F000EA380 /* NaviTitle.swift in Sources */,
+				3D0B8665282423AC000EA380 /* ShoppingTableView.swift in Sources */,
 				3D0B86142820C605000EA380 /* SceneDelegate.swift in Sources */,
+				3D0B86682824CFE9000EA380 /* ShoppingResponse.swift in Sources */,
+				3D0B868228257CF6000EA380 /* ShoppingCellModel.swift in Sources */,
+				3D0B868028257809000EA380 /* ShoppingCellViewModel.swift in Sources */,
 				3D0B86512822C6D8000EA380 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +786,22 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		3D0B866A2824D25E000EA380 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		3D0B868328257E26000EA380 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -673,6 +809,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D0B864C2822C66C000EA380 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3D0B866B2824D25E000EA380 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0B866A2824D25E000EA380 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3D0B868428257E26000EA380 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D0B868328257E26000EA380 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
