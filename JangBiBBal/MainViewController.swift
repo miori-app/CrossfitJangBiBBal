@@ -17,6 +17,8 @@ class MainViewController : UIViewController {
     let shoppingTV = ShoppingTableView()
     let shoppingTVVM =  ShoppingTableViewModel()
     
+    var fetchingMore : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setAttribute()
@@ -86,6 +88,7 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         let query = tagCVVM.getSearchQueryFromTag(index: indexPath.row)
         shoppingTVVM.fetchData(query)
     }
@@ -116,5 +119,31 @@ extension MainViewController : UITableViewDataSource, UITableViewDelegate {
         
         cell.setData(shoppingItem)
         return cell
+    }
+}
+
+extension MainViewController : UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if shoppingTV.contentOffset.y > (shoppingTV.contentSize.height - shoppingTV.bounds.size.height) {
+            print("끝에 도달")
+            if !fetchingMore {
+                beginBatchFetch()
+            }
+        }
+    }
+    
+    private func beginBatchFetch() {
+        if !self.fetchingMore {
+            self.fetchingMore = true
+            DispatchQueue.global().async {
+                // Fake background loading task for 2 seconds
+                sleep(2)
+                // Download more data here
+                DispatchQueue.main.async {
+                    //self.tableView.reloadData()
+                    self.fetchingMore = false
+                }
+            }
+        }
     }
 }
