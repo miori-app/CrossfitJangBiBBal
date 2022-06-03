@@ -18,6 +18,7 @@ class MainViewController : UIViewController {
     let shoppingTVVM =  ShoppingTableViewModel()
     
     var fetchingMore : Bool = false
+    var myQuery : String = "그립"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ extension MainViewController {
         }
     }
     private func setupData() {
-        shoppingTVVM.fetchData("그립")
+        shoppingTVVM.fetchData(myQuery)
     }
     private func setTableView() {
         shoppingTV.delegate = self
@@ -90,7 +91,9 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         let query = tagCVVM.getSearchQueryFromTag(index: indexPath.row)
+        self.myQuery = query
         shoppingTVVM.fetchData(query)
+        shoppingTV.setContentOffset(.zero, animated: true)
     }
 }
 
@@ -125,7 +128,6 @@ extension MainViewController : UITableViewDataSource, UITableViewDelegate {
 extension MainViewController : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if shoppingTV.contentOffset.y > (shoppingTV.contentSize.height - shoppingTV.bounds.size.height) {
-            print("끝에 도달")
             if !fetchingMore {
                 beginBatchFetch()
             }
@@ -140,7 +142,8 @@ extension MainViewController : UIScrollViewDelegate {
                 sleep(2)
                 // Download more data here
                 DispatchQueue.main.async {
-                    //self.tableView.reloadData()
+                    self.shoppingTVVM.loadMoreData(self.myQuery)
+                    self.shoppingTV.reloadData()
                     self.fetchingMore = false
                 }
             }
