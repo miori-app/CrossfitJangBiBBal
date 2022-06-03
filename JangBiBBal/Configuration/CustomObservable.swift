@@ -14,7 +14,7 @@ class Observable<T> {
     // 2) 값이 set되면, listener에 해당 값을 전달한다,
     var value: T {
         didSet {
-            listener?(value)
+            self.listener?(value)
         }
     }
     
@@ -28,7 +28,7 @@ class Observable<T> {
     // 전달받은 "closure" 표현식을 listener에 할당한다.
     func bind(_ closure: @escaping (T) -> Void) {
         closure(value)
-        listener = closure
+        self.listener = closure
     }
 }
 /* ref : https://velog.io/@kipsong/iOSDesignPattern-MVVM-과-DataBinding에-대한-간략한-소개
