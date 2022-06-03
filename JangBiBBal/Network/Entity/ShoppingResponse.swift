@@ -9,7 +9,7 @@ import Foundation
 
 struct ShoppingResponse : Decodable {
     let total : Int
-    let items : [ShoppingItems]
+    var items : [ShoppingItems]
 }
 
 struct ShoppingItems : Decodable {
@@ -18,4 +18,8 @@ struct ShoppingItems : Decodable {
     let image : String
     let lprice : String
     let brand : String
+}
+
+extension ShoppingResponse {
+    static let EMPTY = ShoppingResponse(total: 0, items: [])
 }

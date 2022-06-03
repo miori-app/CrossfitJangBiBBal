@@ -14,14 +14,15 @@ struct ShoppingAPI {
     static let host = "openapi.naver.com"
     static let path = "/v1/search/shop.json"
     
-    func searchItems(query: String) -> URLComponents {
+    func searchItems(query: String, start: Int) -> URLComponents {
         var components = URLComponents()
         components.scheme = ShoppingAPI.scheme
         components.host = ShoppingAPI.host
         components.path = ShoppingAPI.path
         components.queryItems = [
             URLQueryItem(name: "query", value: query),
-            URLQueryItem(name: "display", value: "20")
+            URLQueryItem(name: "display", value: "20"),
+            URLQueryItem(name: "start", value : "\(start)")
         ]
         return components
     }

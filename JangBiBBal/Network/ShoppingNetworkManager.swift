@@ -10,11 +10,15 @@ import Alamofire
 class ShoppingNetworkManager {
     
     private let api = ShoppingAPI()
-    var searchedData : [ShoppingItems] = []
-    
-    func getItmes(_ query : String , onCompleted : @escaping ([ShoppingItems]) -> Void) {
+    //var searchedData : [ShoppingItems] = []
+    var searchedData : ShoppingResponse = ShoppingResponse.EMPTY
+    var addedData : ShoppingResponse = ShoppingResponse.EMPTY
+    var startNum : Int = 1
+    //[ShoppingItems]
+    func getItmes(_ query : String , onCompleted : @escaping (ShoppingResponse) -> Void) {
         
-        guard let url = api.searchItems(query: query).url else { return }
+        startNum = 1
+        guard let url = api.searchItems(query: query, start: startNum).url else { return }
                 
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding(), headers: ShoppingAPIHeader.HEADERS)
             .validate()
@@ -22,11 +26,44 @@ class ShoppingNetworkManager {
                 switch response.result {
                 case .success(let response):
                     //print(response.items)
-                    self.searchedData = response.items
+                    self.searchedData = response
                     onCompleted(self.searchedData)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
             }
     }
+    
+    func next(_ query: String, shoppingResponse : ShoppingResponse, completed: @escaping (ShoppingResponse) -> Void) {
+        let totalItems : Int = shoppingResponse.total
+        startNum += 20
+        guard let url = api.searchItems(query: query, start: startNum).url else {return}
+        if startNum <= 1000{
+            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding(), headers: ShoppingAPIHeader.HEADERS)
+                .validate()
+                .responseDecodable(of: ShoppingResponse.self) {
+                    response in
+                    switch response.result {
+                    case .success(let response):
+                        self.addedData = response
+                        completed(self.addedData)
+                    case .failure(let error) :
+                        print(error.localizedDescription)
+                    }
+                }
+        } else {
+            print("검색결과를 다 불러왔어요")
+        }
+    
+    }
+    
+
+//    func next(currentPage: LectureList, completed: @escaping (LectureList) -> Void) {
+//        let nextPageUrl = currentPage.next
+//        httpClient.getJson(path: nextPageUrl, params: [:]) { result in
+//            if let json = try? result.get() {
+//                completed(self.parseLectureList(jsonObject: self.JSONObject(json)))
+//            }
+//        }
+//    }
 }
