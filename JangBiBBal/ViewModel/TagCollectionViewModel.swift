@@ -11,8 +11,8 @@ import UIKit
 class TagCollectionViewModel  {
 
     let tagCellData = TagCellData()
-    let tagArr : [TagCellModel]
-    let tagQueryArr : [String]
+    var tagArr : [TagCellModel]
+    var tagQueryArr : [String]
     let tagBackgroundColorArr : [UIColor]
     
     let defaultItemIdx : Int = 0

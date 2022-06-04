@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-struct TagCellModel {
+struct TagCellModel : Equatable {
     var tagName : String
 }
