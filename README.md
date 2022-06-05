@@ -6,7 +6,7 @@
 
 크로스핏을 하면서 필요한 용품들을 **터치 한번** 으로 검색할 수 있어요!
 
-## 🛠 개발환경 및 라이브러리
+## 🛠 개발환경 및 라이브러리 (관리는 SPM 으로 진행)
 [![Swift](https://img.shields.io/badge/Swift-5.6-orange)]()
 [![Xcode](https://img.shields.io/badge/Xcode-13.3.1-blue)]()
 [![Snapkit](https://img.shields.io/badge/SnapKit-5.6.0-yellow)]()
