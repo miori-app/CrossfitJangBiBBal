@@ -37,8 +37,6 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
-xcshareddata/
-
 ## Other
 *.moved-aside
 *.xccheckout
@@ -115,5 +113,7 @@ iOSInjectionProject/
 
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+*.xcscheme
 
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods
