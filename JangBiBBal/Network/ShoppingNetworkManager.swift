@@ -34,11 +34,12 @@ class ShoppingNetworkManager {
             }
     }
     
-    func next(_ query: String, shoppingResponse : ShoppingResponse, completed: @escaping (ShoppingResponse) -> Void) {
+    func next(_ query: String, shoppingResponse : ShoppingResponse, onCompleted: @escaping (ShoppingResponse) -> Void) {
         let totalItems : Int = shoppingResponse.total
+        let maxNum : Int = getMaxNextNum(totalItems)
         startNum += 20
         guard let url = api.searchItems(query: query, start: startNum).url else {return}
-        if startNum <= 1000{
+        if startNum <= maxNum{
             AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding(), headers: ShoppingAPIHeader.HEADERS)
                 .validate()
                 .responseDecodable(of: ShoppingResponse.self) {
@@ -46,7 +47,7 @@ class ShoppingNetworkManager {
                     switch response.result {
                     case .success(let response):
                         self.addedData = response
-                        completed(self.addedData)
+                        onCompleted(self.addedData)
                     case .failure(let error) :
                         print(error.localizedDescription)
                     }
@@ -57,13 +58,7 @@ class ShoppingNetworkManager {
     
     }
     
-
-//    func next(currentPage: LectureList, completed: @escaping (LectureList) -> Void) {
-//        let nextPageUrl = currentPage.next
-//        httpClient.getJson(path: nextPageUrl, params: [:]) { result in
-//            if let json = try? result.get() {
-//                completed(self.parseLectureList(jsonObject: self.JSONObject(json)))
-//            }
-//        }
-//    }
+    func getMaxNextNum(_ totalItems : Int) -> Int {
+        return totalItems > 1000 ? 1000 : totalItems
+    }
 }
