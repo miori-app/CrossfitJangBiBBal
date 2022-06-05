@@ -11,7 +11,6 @@
 		3D0B86142820C605000EA380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86132820C605000EA380 /* SceneDelegate.swift */; };
 		3D0B861B2820C606000EA380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B861A2820C606000EA380 /* Assets.xcassets */; };
 		3D0B861E2820C606000EA380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B861C2820C606000EA380 /* LaunchScreen.storyboard */; };
-		3D0B86292820C606000EA380 /* JangBiBBalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86282820C606000EA380 /* JangBiBBalTests.swift */; };
 		3D0B86332820C606000EA380 /* JangBiBBalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86322820C606000EA380 /* JangBiBBalUITests.swift */; };
 		3D0B86352820C606000EA380 /* JangBiBBalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86342820C606000EA380 /* JangBiBBalUITestsLaunchTests.swift */; };
 		3D0B86462821750D000EA380 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B86452821750D000EA380 /* MainViewController.swift */; };
@@ -66,7 +65,6 @@
 		3D0B861D2820C606000EA380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D0B861F2820C606000EA380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0B86242820C606000EA380 /* JangBiBBalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JangBiBBalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D0B86282820C606000EA380 /* JangBiBBalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JangBiBBalTests.swift; sourceTree = "<group>"; };
 		3D0B862E2820C606000EA380 /* JangBiBBalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JangBiBBalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B86322820C606000EA380 /* JangBiBBalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JangBiBBalUITests.swift; sourceTree = "<group>"; };
 		3D0B86342820C606000EA380 /* JangBiBBalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JangBiBBalUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 		3D0B86272820C606000EA380 /* JangBiBBalTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D0B86282820C606000EA380 /* JangBiBBalTests.swift */,
 				3DB9B0CF282CA5C000100126 /* TagCollectionViewModelTest.swift */,
 				3D5D0538284B2EEE002293F5 /* NetworkingTest.swift */,
 			);
@@ -458,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0B86292820C606000EA380 /* JangBiBBalTests.swift in Sources */,
 				3D5D0539284B2EEE002293F5 /* NetworkingTest.swift in Sources */,
 				3DB9B0D0282CA5C000100126 /* TagCollectionViewModelTest.swift in Sources */,
 			);
