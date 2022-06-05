@@ -35,7 +35,7 @@ class ShoppingTableViewModel : ObservableVMProtocol {
     
     func loadMoreData(_ query : String) {
         self.shoppingNetwork.next("크로스핏 \(query)", shoppingResponse: responseData) {
-            var addedData = $0
+            let addedData = $0
             //addedData.items.insert(contentsOf: self.storage.value, at: 0)
             self.storage.value += addedData.items
             //self.storage.value = addedData.items
