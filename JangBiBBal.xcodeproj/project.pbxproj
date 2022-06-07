@@ -39,6 +39,8 @@
 		3DB1233F284D05A400E7F029 /* ShoppingTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1233E284D05A400E7F029 /* ShoppingTableViewModel.swift */; };
 		3DB12341284D073B00E7F029 /* TagCollectionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB12340284D073B00E7F029 /* TagCollectionViewModelTest.swift */; };
 		3DB12343284D078700E7F029 /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB12342284D078700E7F029 /* NetworkingTest.swift */; };
+		3DB12345284EFA4400E7F029 /* ShoppingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB12344284EFA4400E7F029 /* ShoppingBackgroundView.swift */; };
+		3DB12347284EFB5500E7F029 /* ShoppingBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB12346284EFB5500E7F029 /* ShoppingBackgroundViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		3DB1233E284D05A400E7F029 /* ShoppingTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewModel.swift; sourceTree = "<group>"; };
 		3DB12340284D073B00E7F029 /* TagCollectionViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewModelTest.swift; sourceTree = "<group>"; };
 		3DB12342284D078700E7F029 /* NetworkingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
+		3DB12344284EFA4400E7F029 /* ShoppingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBackgroundView.swift; sourceTree = "<group>"; };
+		3DB12346284EFB5500E7F029 /* ShoppingBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBackgroundViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 				3DB1231F284D036C00E7F029 /* Cells */,
 				3DB12315284D028F00E7F029 /* TagCollectionView.swift */,
 				3DB12339284D056B00E7F029 /* ShoppingTableView.swift */,
+				3DB12344284EFA4400E7F029 /* ShoppingBackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				3DB1233B284D058900E7F029 /* Cells */,
 				3DB12322284D03AF00E7F029 /* TagCollectionViewModel.swift */,
 				3DB1233E284D05A400E7F029 /* ShoppingTableViewModel.swift */,
+				3DB12346284EFB5500E7F029 /* ShoppingBackgroundViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,12 +435,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB12347284EFB5500E7F029 /* ShoppingBackgroundViewModel.swift in Sources */,
 				3DB1232A284D043700E7F029 /* CustomObservable.swift in Sources */,
 				3D0B86462821750D000EA380 /* MainViewController.swift in Sources */,
 				3DB12326284D03D900E7F029 /* String.swift in Sources */,
 				3DB1232F284D047F00E7F029 /* ShoppingAPI.swift in Sources */,
 				3DB12331284D048D00E7F029 /* ShoppingNetworkManager.swift in Sources */,
 				3DB1233A284D056B00E7F029 /* ShoppingTableView.swift in Sources */,
+				3DB12345284EFA4400E7F029 /* ShoppingBackgroundView.swift in Sources */,
 				3DB12336284D053900E7F029 /* ShoppingCellModel.swift in Sources */,
 				3DB1233F284D05A400E7F029 /* ShoppingTableViewModel.swift in Sources */,
 				3DB12323284D03AF00E7F029 /* TagCollectionViewModel.swift in Sources */,
