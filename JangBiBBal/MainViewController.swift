@@ -16,6 +16,7 @@ class MainViewController : UIViewController {
     
     let shoppingTV = ShoppingTableView()
     let shoppingTVVM =  ShoppingTableViewModel()
+    let shoppingTVBackGroundViewModel = ShoppingBackgroundViewModel()
     
     var fetchingMore : Bool = false
     var myQuery : String = "그립"
@@ -26,6 +27,7 @@ class MainViewController : UIViewController {
         setLayout()
         setupData()
         setTableView()
+        bind(shoppingTVVM)
     }
     
 //    override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +42,6 @@ extension MainViewController {
     private func setAttribute() {
         self.title = NaviTitle.mainTitle
         view.backgroundColor = .white
-        
         tagCV.delegate = self
         tagCV.dataSource = self
     }
@@ -62,7 +63,11 @@ extension MainViewController {
     private func setTableView() {
         shoppingTV.delegate = self
         shoppingTV.dataSource = self
-        shoppingTV.bind(shoppingTVVM)
+        //shoppingTV.bind(shoppingTVVM)
+    }
+    func bind(_ viewModel : ShoppingTableViewModel) {
+        shoppingTV.bind(viewModel)
+        shoppingTV.backGroundViewbind(viewModel)
     }
 }
 
