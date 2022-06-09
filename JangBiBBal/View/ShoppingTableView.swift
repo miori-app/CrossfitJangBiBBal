@@ -8,7 +8,8 @@
  import UIKit
 
  class ShoppingTableView : UITableView {
-
+     
+     let customBackgroundView = ShoppingBackgroundView()
      override init(frame: CGRect, style: UITableView.Style) {
          super.init(frame: frame, style: .plain)
 
@@ -25,6 +26,7 @@
          self.rowHeight = UITableView.automaticDimension
          self.estimatedRowHeight = ScreenConstant.deviceHeight * 0.12
          self.separatorStyle = .singleLine
+         self.backgroundView = customBackgroundView
      }
 
      func bind(_ viewModel : ShoppingTableViewModel) {
@@ -32,7 +34,15 @@
              guard let self = self else { return }
              DispatchQueue.main.async {
                  self.reloadData()
+                 viewModel.realodFinish()
              }
+         }
+     }
+     
+     func backGroundViewbind(_ viewModel : ShoppingTableViewModel) {
+         viewModel.backgroundVM.isHidden.bind { [weak self] boolVal in
+             guard let self = self else { return }
+             self.customBackgroundView.statusLabel.isHidden = boolVal
          }
      }
  }
