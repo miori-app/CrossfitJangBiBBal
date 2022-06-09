@@ -19,11 +19,14 @@ class ShoppingTableViewModel : ObservableVMProtocol {
     
     var responseData : ShoppingResponse = ShoppingResponse.EMPTY
     
+    let backgroundVM = ShoppingBackgroundViewModel()
+    
     init(networkManager : ShoppingNetworkManager = ShoppingNetworkManager()) {
         self.shoppingNetwork = networkManager
     }
     
     func fetchData(_ query : String) {
+        backgroundVM.isHidden.value = false
         self.shoppingNetwork.getItmes("크로스핏 \(query)") { response in
             let observable = Observable(response)
             //value로 넘겨주기
@@ -44,6 +47,11 @@ class ShoppingTableViewModel : ObservableVMProtocol {
     
     func setError(_ message: String) {
         //
+    }
+    
+    func realodFinish() {
+        sleep(1)
+        backgroundVM.isHidden.value = true
     }
     
 }
