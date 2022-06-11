@@ -15,12 +15,12 @@ class TagCellData {
             TagCellModel(tagName: "🏋️‍♂️ 무릎 보호대"),
             TagCellModel(tagName: "👟 메트콘"),
             TagCellModel(tagName: "👟 줄넘기"),
-            TagCellModel(tagName: "🏋️‍♂️ 허리보호대")
+            TagCellModel(tagName: "🏋️‍♂️ 허리벨트")
         ]
     }
     
     func getTagCellSearchQuery() -> [String] {
-        return ["그립","무릎 보호대","메트콘","줄넘기","허리보호대"]
+        return ["그립","무릎 보호대","메트콘","줄넘기","리프팅벨트"]
     }
     
     func makeCellBackgroundColorArr() -> [UIColor] {
