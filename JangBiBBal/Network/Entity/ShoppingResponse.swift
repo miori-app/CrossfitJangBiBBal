@@ -9,7 +9,7 @@ import Foundation
 
 struct ShoppingResponse : Decodable {
     let total : Int
-    var items : [ShoppingItems]
+    let items : [ShoppingItems]
 }
 
 struct ShoppingItems : Decodable {
