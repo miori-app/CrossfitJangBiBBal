@@ -15,7 +15,7 @@ class MainViewController : UIViewController {
     let tagCVVM = TagCollectionViewModel()
     
     let shoppingTV = ShoppingTableView()
-    let shoppingTVVM =  ShoppingTableViewModel()
+    let shoppingTVVM =  ShoppingTableViewModel.shared
     let shoppingTVBackGroundViewModel = ShoppingBackgroundViewModel()
     
     var fetchingMore : Bool = false

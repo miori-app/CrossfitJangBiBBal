@@ -9,6 +9,8 @@ import Foundation
 
 class ShoppingTableViewModel : ObservableVMProtocol {
     
+    static let shared = ShoppingTableViewModel()
+    
     typealias T = ShoppingItems
     
     var errorMessage: Observable<String?> = Observable(nil)
